@@ -8,6 +8,11 @@ const Navbar = ({ user, handleLogout }) => {
     if (user) {
       return (
         <>
+          <Link to='/dash'>
+            <li>
+              Dashboard
+            </li>
+          </Link>
           <li onClick={ () => handleLogout() }>
             Logout
           </li>
